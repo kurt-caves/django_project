@@ -1,0 +1,10 @@
+{% extends "base.html" %}  <!-- Extend your base layout if you have one -->
+
+{% block content %}
+  <div class="container">
+    <h1>Welcome to the Home Page!</h1>
+    <p>This is the main page of your Django site.</p>
+  </div>
+  <a href="{% url 'register' %}" class='btn btn-primary'>Register</a>
+  <a href="{% url 'login' %}" class='btn btn-primary' >Login</a>
+{% endblock %}

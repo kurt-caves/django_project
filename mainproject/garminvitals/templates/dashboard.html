@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+
+{% block title %}Dashboard{% endblock %}
+
+{% block content %}
+  <div class="container mt-4">
+    <h2 class="mb-4">User Dashboard</h2>
+    
+    <!-- Row with some example widgets/cards -->
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card text-white bg-primary mb-3">
+          <div class="card-header">Total Steps</div>
+          <div class="card-body">
+            <h5 class="card-title">10,000 Steps</h5>
+            <p class="card-text">You've hit your step goal today!</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-md-4">
+        <div class="card text-white bg-success mb-3">
+          <div class="card-header">Calories Burned</div>
+          <div class="card-body">
+            <h5 class="card-title">500 kcal</h5>
+            <p class="card-text">Great job on staying active!</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card text-white bg-warning mb-3">
+          <div class="card-header">Active Minutes</div>
+          <div class="card-body">
+            <h5 class="card-title">45 minutes</h5>
+            <p class="card-text">You're well on your way to hit your goal.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- You can add more sections or rows here for different dashboard elements -->
+    
+  </div>
+{% endblock %}
